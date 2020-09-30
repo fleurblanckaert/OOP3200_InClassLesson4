@@ -1,4 +1,5 @@
 /**
+ *Name:Fleur Blanckaert
  * Project OOP3200-F2020-Lesson4
  */
 
@@ -18,6 +19,8 @@
  * @param age
  * @param student_id
  */
+
+
 Student::Student(const std::string& first_name, const std::string& last_name, const float age, std::string student_id)
 : Person(first_name, last_name, age), m_studentID(std::move(student_id))
 {

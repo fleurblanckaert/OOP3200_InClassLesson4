@@ -1,4 +1,5 @@
 /**
+ *Name:Fleur Blanckaert
  * Project OOP3200-F2020-Lesson4
  */
 
@@ -11,23 +12,24 @@
 #include "Person.h"
 #include <string>
 
-class Student : public Person {
+class Student: public Person
+{
 public:
-
     /**
      * @param first_name
      * @param last_name
      * @param age
      * @param student_id
      */
-    Student(const std::string& first_name, const std::string& last_name, float age, std::string student_id);
 
-    Student(std::string first_name, std::string last_name, float age, std::string student_id);
+	Student(const std::string& first_name, const std::string& last_name, float age, std::string student_id);
+
     std::string getStudentID() const;
 
     /**
      * @param value
      */
+	
     void setStudentID(const std::string& value);
 
     void Studies() const;
