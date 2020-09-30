@@ -2,7 +2,7 @@
  * Project OOP3200-F2020-Lesson4
  */
 
-
+#pragma once
 #ifndef _PROFESSOR_H
 #define _PROFESSOR_H
 
@@ -10,8 +10,8 @@
 
 
 class Professor: public Person {
-public: 
-    string m_employeeID;
+public:
+	std::string m_employeeID;
     
 /**
  * @param first_name
@@ -19,18 +19,18 @@ public:
  * @param age
  * @param emplyee_id
  */
-void Professor(string first_name, string last_name, float age, string emplyee_id);
-    
-string getEmployeeID();
+void Professor(std::string first_name, std::string last_name, float age, std::string emplyee_id);
+
+	std::string getEmployeeID();
     
 /**
  * @param value
  */
-void setEmployeeID(string value);
+void setEmployeeID(std::string value);
     
 void Teacher();
-    
-string ToString();
+
+std::string ToString() override;
 };
 
 #endif //_PROFESSOR_H
